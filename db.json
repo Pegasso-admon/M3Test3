@@ -1,0 +1,82 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@example.com",
+      "password": "adminpassword",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "email": "visitor@example.com",
+      "password": "visitorpassword",
+      "role": "visitor"
+    },
+    {
+      "email": "anyuser@gmail.com",
+      "password": "12345",
+      "role": "visitor",
+      "id": 3
+    },
+    {
+      "email": "raul@gmail.com",
+      "password": " ",
+      "role": "visitor",
+      "id": 4
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Innovacion Summit 2025",
+      "date": "2025-09-15",
+      "location": "Corferias, Bogotá",
+      "price": 50,
+      "description": "A summit on the latest trends in technology and innovation.",
+      "image": "https://images.unsplash.com/photo-1488439646700-0e3b2c8e9dab?q=80&w=1560&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "AI & Future Tech Expo",
+      "date": "2025-11-20",
+      "location": "Plaza Mayor, Medellín",
+      "price": 75,
+      "description": "Explore the future of Artificial Intelligence and emerging technologies.",
+      "image": "https://images.unsplash.com/photo-1647977473573-2a0c8fd3e4da?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "name": "Design Thinking Workshop",
+      "date": "2025-08-01",
+      "location": "Centro de Diseño, Cali",
+      "price": 30,
+      "description": "Hands-on workshop to master Design Thinking methodologies.",
+      "image": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=1112&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "status": "inactive"
+    },
+    {
+      "name": "Riwi Event",
+      "date": "2025-07-01",
+      "location": "Riwi Hall, Medellin",
+      "price": 25,
+      "description": "Welcome to the riwi event, in this hackathon you will be able to experience many things.",
+      "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "status": "active",
+      "id": 4
+    },
+    {
+      "name": "Example ",
+      "date": "2025-07-15",
+      "location": "MED-riwi hall",
+      "price": 20000,
+      "description": "hOLA",
+      "image": "./assets/images/default-event.png",
+      "status": "active",
+      "capacity": 50,
+      "id": 5
+    }
+  ],
+  "enrolledEmail": []
+}

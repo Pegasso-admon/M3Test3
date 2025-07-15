@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ross Events</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./app/styles/main.css" />
+</head>
+
+<body class="dark-theme">
+    <header>
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#home">
+                    <span class="logo has-text-weight-bold is-size-4">Ro<span class="green_n">ss</span>Events</span>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="#home">Home</a>
+                    <button class="navbar-item" href="#dashboard" id="dashboard-nav-link">Dashboard</button> 
+                    <button class="navbar-item" href="#dashboard/events/create" id="create-event-nav-link">Create Event</button> 
+                    <button id="logout-btn" class="button">Logout</button>
+                    <button id="theme-toggle" class="button">Theme</button>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a role="button"  aria-label="menu" aria-expanded="false" data-target="buttons">
+                    <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a>
+                        <div class="buttons" id="auth-buttons">
+                                <a class="button" href="#register" id="register-btn">
+                                    Sign up
+                                </a>
+                            <a class="button" href="#login" id="login-btn">
+                                Log in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="app-root">
+        </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-one-third has-text-left">
+                    <h4 class="title is-5">Information</h4>
+                    <p class="is-size-7">Ross Events is an elegant and important company that focuses in the people. We host and promote innovation-driven events, talks, and
+                        opportunities. Stay connected!</p>
+                </div>
+                <div class="column has-text-right">
+                    <h4 class="title is-5">© 2025 Ross Events</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./app/assets/scripts/main.js"></script>
+</body>
+
+</html>

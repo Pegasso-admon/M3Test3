@@ -1,0 +1,232 @@
+/* public/styles/main.css */
+:root {
+    --dark-background: #1a1a1a;
+    --dark-text-color: #f5f5f5;
+    --dark-secondary-background: #2c2c2c;
+    --dark-border-color: #444444;
+    --palette-green-vibrant: #8AE03A;
+    --palette-green-alt: #3AE848;
+    --palette-green-medium: #77E03A;
+    --palette-yellow-green: #E0E03A;
+    --palette-blue-green: #3AE884;
+    --palette-green-darker: #70E035;
+    --light-background: #ffffff;
+    --light-text-color: #070707;
+    --light-secondary-background: #f0f0f0;
+    --light-border-color: #dddddd;
+}
+
+body {
+    font-family: 'DM Serif Text', serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* This makes the main content area take up available space */
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: var(--dark-background);
+    color: var(--dark-text-color);
+}
+
+body.dark-theme .navbar.is-dark {
+    background-color: var(--dark-secondary-background);
+    border-bottom: 1px solid var(--dark-border-color);
+}
+
+body.dark-theme .navbar-item,
+body.dark-theme .navbar-link {
+    color: var(--dark-text-color);
+}
+
+body.dark-theme .navbar-item:hover,
+body.dark-theme .navbar-link:hover {
+    background-color: var(--dark-border-color);
+}
+
+body.dark-theme .footer {
+    background-color: var(--dark-secondary-background);
+    color: var(--dark-text-color);
+    border-top: 1px solid var(--dark-border-color);
+}
+
+body.dark-theme .input,
+body.dark-theme .textarea,
+body.dark-theme .select select {
+    background-color: var(--dark-secondary-background);
+    border-color: var(--dark-border-color);
+    color: var(--dark-text-color);
+}
+
+body.dark-theme .input::placeholder,
+body.dark-theme .textarea::placeholder {
+    color: rgba(245, 245, 245, 0.6);
+}
+
+body.dark-theme .input:focus,
+body.dark-theme .textarea:focus,
+body.dark-theme .select select:focus {
+    border-color: var(--palette-green-vibrant);
+    box-shadow: 0 0 0 0.125em rgba(138, 224, 58, 0.25);
+}
+
+body.dark-theme .box {
+    background-color: var(--dark-secondary-background);
+    color: var(--dark-text-color);
+    border: 1px solid var(--dark-border-color);
+}
+
+body.dark-theme .title,
+body.dark-theme .subtitle {
+    color: var(--dark-text-color);
+}
+
+body.dark-theme .card {
+    background-color: var(--dark-secondary-background);
+    border: 1px solid var(--dark-border-color);
+    color: var(--dark-text-color);
+}
+
+body.dark-theme .card .title,
+body.dark-theme .card .subtitle,
+body.dark-theme .card .content {
+    color: var(--dark-text-color);
+}
+
+/* Light Theme */
+body.light-theme {
+    background-color: var(--light-background);
+    color: var(--light-text-color);
+}
+
+body.light-theme .navbar.is-dark {
+    background-color: var(--light-secondary-background);
+    border-bottom: 1px solid var(--light-border-color);
+}
+
+body.light-theme .navbar-item,
+body.light-theme .navbar-link {
+    color: var(--light-text-color);
+}
+
+body.light-theme .navbar-item:hover,
+body.light-theme .navbar-link:hover {
+    background-color: var(--light-border-color);
+}
+
+body.light-theme .footer {
+    background-color: var(--light-secondary-background);
+    color: var(--light-text-color);
+    border-top: 1px solid var(--light-border-color);
+}
+
+body.light-theme .input,
+body.light-theme .textarea,
+body.light-theme .select select {
+    background-color: var(--light-secondary-background);
+    border-color: var(--light-border-color);
+    color: var(--light-text-color);
+}
+
+body.light-theme .input::placeholder,
+body.light-theme .textarea::placeholder {
+    color: rgba(7, 7, 7, 0.6);
+}
+
+body.light-theme .input:focus,
+body.light-theme .textarea:focus,
+body.light-theme .select select:focus {
+    border-color: var(--palette-green-vibrant);
+    box-shadow: 0 0 0 0.125em rgba(138, 224, 58, 0.25);
+}
+
+body.light-theme .box {
+    background-color: var(--light-secondary-background);
+    color: var(--light-text-color);
+    border: 1px solid var(--light-border-color);
+}
+
+body.light-theme .title,
+body.light-theme .subtitle {
+    color: var(--light-text-color);
+}
+
+body.light-theme .card {
+    background-color: var(--light-secondary-background);
+    border: 1px solid var(--light-border-color);
+    color: var(--light-text-color);
+}
+
+body.light-theme .card .title,
+body.light-theme .card .subtitle,
+body.light-theme .card .content {
+    color: var(--light-text-color);
+}
+
+
+/* Common Styles */
+.green_n {
+    color: var(--palette-green-medium);
+}
+
+.has-background-dark-green {
+    background-color: #0c4d0c;
+    /* A darker green for the hero */
+}
+
+.hero {
+    margin-bottom: 2rem;
+}
+
+.footer {
+    padding: 3rem 1.5rem;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Event Card Specific Styles */
+.event-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure cards in a row have similar height */
+}
+
+.event-card .card-image {
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.event-card .card-content {
+    flex-grow: 1; /* Allow content to grow and fill space */
+    display: flex;
+    flex-direction: column;
+}
+
+.event-card .content {
+    flex-grow: 1; /* Allow content to grow and fill space */
+}
+
+.event-card .button {
+    margin-top: auto; /* Push button to the bottom of the card content */
+}
+
+/* Hide specific elements if JS is disabled or not loaded */
+#app-root,
+#auth-buttons,
+#logout-btn,
+#dashboard-nav-link,
+#create-event-nav-link {
+    visibility: hidden;
+}
+
+/* Styles for when JavaScript is loaded and controls visibility */
+body:not(.js-disabled) #app-root,
+body:not(.js-disabled) #auth-buttons,
+body:not(.js-disabled) #logout-btn,
+body:not(.js-disabled) #dashboard-nav-link,
+body:not(.js-disabled) #create-event-nav-link {
+    visibility: visible;
+}

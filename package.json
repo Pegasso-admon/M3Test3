@@ -1,0 +1,17 @@
+{
+    "name": "SamuelRosero", 
+    "version": "1.0.0",
+    "description": "Single Page Application for Event Management",
+    "main": "index.js",
+    "scripts": {
+        "start": "npm run json-server & npm run serve-static",
+        "json-server": "json-server --watch db.json --port 3000",
+        "serve-static": "npx serve public"
+    },
+    "keywords": [],
+    "author": "Samuel Rosero", 
+    "license": "ISC",
+    "dependencies": {
+        "json-server": "^1.0.0-beta.1"
+    }
+}
